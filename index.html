@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-list">
+            <h2>To-Do List 
+                <dotlottie-player 
+                    src="https://lottie.host/25124751-302d-4c03-a370-57d0c225feaa/RGSZxduQ0p.json" 
+                    background="transparent" 
+                    speed="1" 
+                    loop 
+                    autoplay 
+                    class="lottie-player">
+                </dotlottie-player>
+            </h2>
+            <div class="row">
+                <input type="text" id="input_field" placeholder="Add your Text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
